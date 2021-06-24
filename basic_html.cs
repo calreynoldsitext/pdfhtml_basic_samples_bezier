@@ -4,7 +4,7 @@ using iText.Html2Pdf;
 
 namespace Example
 {
-    public class CSSToPDF
+    public class HtmlToPDFExample
     {
 
         public const String DEST = "output_file_path/output_pdf.pdf";
@@ -14,7 +14,7 @@ namespace Example
         {
             FileInfo file = new FileInfo(DEST);
             file.Directory().Create();
-            new CSSToPDF().CreatePdf();
+            new HtmlToPDFExample().CreatePdf();
         }
 
         public virtual void CreatePdf()
